@@ -7,8 +7,7 @@ This package is made to fetch the last email arrived in the Inbox of the configu
 ### Example
 
 ```js
-import { MailHelper } from './final';
-import { config } from './config';
+import { MailHelper } from '@mohuk/mail-helper';
 
 const helper = new MailHelper({
   user: '',
