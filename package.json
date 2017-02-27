@@ -1,0 +1,25 @@
+{
+  "name": "mail-helper",
+  "version": "1.0.0",
+  "description": "imap based mail helper functions",
+  "main": "dist/index.js",
+  "typings":"dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "build": "rimraf ./dist && tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Mohammad Umair Khan <mohammad.umair.k@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "imap": "^0.8.19"
+  },
+  "devDependencies": {
+    "@types/imap": "^0.8.28",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.2.1"
+  }
+}
