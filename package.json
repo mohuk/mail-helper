@@ -1,5 +1,5 @@
 {
-  "name": "mail-helper",
+  "name": "@mohuk/mail-helper",
   "version": "1.0.0",
   "description": "imap based mail helper functions",
   "main": "dist/index.js",
@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tsc -w",
-    "build": "rimraf ./dist && tsc"
+    "build": "rimraf ./dist && tsc",
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
