@@ -26,6 +26,9 @@ helper.connect()
   .then((email: string) => {
     console.log(email);
   })
+  .then(() => {
+    helper.disconnect();
+  })
   .catch((err) => {
     console.log(err)
   });
