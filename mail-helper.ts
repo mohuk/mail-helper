@@ -40,12 +40,15 @@ export class MailHelper {
             });
 
             stream.once('end', () => {
-              this.connection.end();
               resolve(buffer);
             });
           })
         })
       });
     });
+  }
+
+  disconnect() {
+    this.connection.end();
   }
 }
